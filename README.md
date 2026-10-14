@@ -187,3 +187,5 @@ Star the repo if you find it useful!
 **Made for institutional investors, digital asset operations teams, custody engineers, and developers building secure custody infrastructure.**  
 
 Let's make third-party crypto custody more open, auditable, and institutionally accessible.
+# Awesome-Third-Party-Custodian-In-Crypto
+

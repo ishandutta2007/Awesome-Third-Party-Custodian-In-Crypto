@@ -1,0 +1,216 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="auto">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c16" />
+      <stop offset="50%" stop-color="#0d1424" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#9d4edd" />
+    </linearGradient>
+
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#7928ca" stop-opacity="0.9" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.8" />
+    </linearGradient>
+
+    <radialGradient id="glowPulse" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#00f2fe" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Filters for Glow -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+    </filter>
+
+    <!-- Dynamic CSS Animations -->
+    <style>
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-8px) rotate(1deg); }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.25; transform: scale(1); }
+        50% { opacity: 0.55; transform: scale(1.1); }
+      }
+      @keyframes beamMove {
+        0% { transform: translateX(-1200px); }
+        100% { transform: translateX(1200px); }
+      }
+      @keyframes orbitParticle {
+        0% { transform: rotate(0deg) translateX(45px) rotate(0deg); }
+        100% { transform: rotate(360deg) translateX(45px) rotate(-360deg); }
+      }
+      @keyframes nodePulse {
+        0%, 100% { r: 3px; opacity: 0.4; }
+        50% { r: 5px; opacity: 0.9; }
+      }
+
+      .bg-grid { opacity: 0.12; }
+      .ambient-glow-1 {
+        animation: pulseGlow 7s ease-in-out infinite;
+        transform-origin: 250px 180px;
+      }
+      .ambient-glow-2 {
+        animation: pulseGlow 9s ease-in-out infinite alternate;
+        transform-origin: 950px 220px;
+      }
+      .shield-group {
+        animation: floatSlow 6s ease-in-out infinite;
+        transform-origin: 140px 190px;
+      }
+      .beam-line {
+        animation: beamMove 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+      .node-1 { animation: nodePulse 3s infinite ease-in-out; }
+      .node-2 { animation: nodePulse 4s infinite ease-in-out 1s; }
+      .node-3 { animation: nodePulse 3.5s infinite ease-in-out 0.5s; }
+      .orbit-dot {
+        animation: orbitParticle 8s linear infinite;
+        transform-origin: 140px 190px;
+      }
+
+      .banner-title {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 900;
+        letter-spacing: 1.5px;
+        fill: #ffffff;
+      }
+      .banner-subtitle {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        fill: #94a3b8;
+        letter-spacing: 0.5px;
+      }
+      .pill-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #e2e8f0;
+      }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="400" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Ambient Dynamic Glows (in background) -->
+  <circle class="ambient-glow-1" cx="250" cy="180" r="160" fill="url(#glowPulse)" filter="url(#softGlow)" />
+  <circle class="ambient-glow-2" cx="950" cy="220" r="200" fill="#9d4edd" opacity="0.18" filter="url(#softGlow)" />
+
+  <!-- Geometric Circuit / Custody Vault Grid Pattern -->
+  <g class="bg-grid" stroke="#4facfe" stroke-width="1">
+    <line x1="0" y1="80" x2="1200" y2="80" stroke-dasharray="6,6" />
+    <line x1="0" y1="160" x2="1200" y2="160" stroke-dasharray="6,6" />
+    <line x1="0" y1="240" x2="1200" y2="240" stroke-dasharray="6,6" />
+    <line x1="0" y1="320" x2="1200" y2="320" stroke-dasharray="6,6" />
+    <line x1="200" y1="0" x2="200" y2="400" stroke-dasharray="6,6" />
+    <line x1="400" y1="0" x2="400" y2="400" stroke-dasharray="6,6" />
+    <line x1="600" y1="0" x2="600" y2="400" stroke-dasharray="6,6" />
+    <line x1="800" y1="0" x2="800" y2="400" stroke-dasharray="6,6" />
+    <line x1="1000" y1="0" x2="1000" y2="400" stroke-dasharray="6,6" />
+
+    <!-- Isometric Vault Poly-Lines -->
+    <path d="M960,60 L1040,110 L1040,210 L960,160 Z" fill="none" stroke="#00f2fe" stroke-opacity="0.3" stroke-width="1.5" />
+    <path d="M1040,110 L1120,60 L1120,160 L1040,210 Z" fill="none" stroke="#9d4edd" stroke-opacity="0.3" stroke-width="1.5" />
+    <path d="M960,60 L1040,10 L1120,60 L1040,110 Z" fill="none" stroke="#4facfe" stroke-opacity="0.4" stroke-width="1.5" />
+  </g>
+
+  <!-- Network Interconnection Nodes -->
+  <g fill="#00f2fe">
+    <circle class="node-1" cx="200" cy="160" r="4" filter="url(#glow)" />
+    <circle class="node-2" cx="400" cy="80" r="4" filter="url(#glow)" />
+    <circle class="node-3" cx="600" cy="240" r="4" filter="url(#glow)" />
+    <circle class="node-1" cx="800" cy="160" r="4" filter="url(#glow)" />
+    <circle class="node-2" cx="1000" cy="80" r="4" filter="url(#glow)" />
+  </g>
+
+  <!-- Animated Scanner Laser Line Across Center (clipped) -->
+  <g clip-path="url(#borderClip)">
+    <line class="beam-line" x1="0" y1="365" x2="300" y2="365" stroke="url(#accentGrad)" stroke-width="3.5" filter="url(#glow)" />
+  </g>
+
+  <!-- Left Custody Security Shield & Key Icon (Foreground) -->
+  <g class="shield-group">
+    <!-- Outer Shield Glow -->
+    <path d="M140,110 L195,135 C195,190 165,235 140,255 C115,235 85,190 85,135 Z"
+          fill="url(#cardGrad)" stroke="url(#shieldGrad)" stroke-width="2.5" filter="url(#glow)" />
+
+    <!-- Inner Core Emblem -->
+    <path d="M140,126 L180,146 C180,188 158,222 140,238 C122,222 100,188 100,146 Z"
+          fill="#0f172a" stroke="#00f2fe" stroke-opacity="0.4" stroke-width="1.5" />
+
+    <!-- Digital Key & Lock Symbol -->
+    <circle cx="140" cy="165" r="14" fill="none" stroke="#00f2fe" stroke-width="3" />
+    <path d="M140,179 L140,205 M140,192 L148,192 M140,200 L146,200" stroke="#00f2fe" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Orbiting Satellite Security Particle -->
+    <circle class="orbit-dot" cx="140" cy="190" r="3.5" fill="#00f2fe" filter="url(#glow)" />
+  </g>
+
+  <!-- Typography & Content Area (Foreground strictly maintained) -->
+  <!-- Header Category Eyebrow -->
+  <g transform="translate(245, 115)">
+    <rect x="0" y="0" width="220" height="26" rx="13" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <circle cx="12" cy="13" r="5" fill="#00f2fe" />
+    <text x="26" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#38bdf8" letter-spacing="1">INSTITUTIONAL SAFEKEEPING</text>
+  </g>
+
+  <!-- Main Title -->
+  <text class="banner-title" x="245" y="175" font-size="34">
+    Awesome Third-Party Custodian
+  </text>
+  <text class="banner-title" x="245" y="215" font-size="34" fill="url(#accentGrad)">
+    In Crypto &amp; Digital Assets
+  </text>
+
+  <!-- Subtitle -->
+  <text class="banner-subtitle" x="245" y="255" font-size="16">
+    Curated registry of enterprise SaaS custodians, MPC infrastructure &amp; open-source key management
+  </text>
+
+  <!-- Dynamic Feature Badges / Pills (Bottom Row) -->
+  <g transform="translate(245, 290)">
+    <!-- Pill 1: MPC & TSS -->
+    <g transform="translate(0, 0)">
+      <rect width="138" height="34" rx="8" fill="#111c33" stroke="#1e293b" stroke-width="1.2" />
+      <text class="pill-text" x="14" y="21">🔐 MPC &amp; TSS</text>
+    </g>
+
+    <!-- Pill 2: Qualified Custody -->
+    <g transform="translate(150, 0)">
+      <rect width="175" height="34" rx="8" fill="#111c33" stroke="#1e293b" stroke-width="1.2" />
+      <text class="pill-text" x="14" y="21">🏛️ Qualified Custody</text>
+    </g>
+
+    <!-- Pill 3: HSM & Enclaves -->
+    <g transform="translate(337, 0)">
+      <rect width="168" height="34" rx="8" fill="#111c33" stroke="#1e293b" stroke-width="1.2" />
+      <text class="pill-text" x="14" y="21">🛡️ HSM &amp; Enclaves</text>
+    </g>
+
+    <!-- Pill 4: Off-Exchange Settlement -->
+    <g transform="translate(517, 0)">
+      <rect width="180" height="34" rx="8" fill="#111c33" stroke="#1e293b" stroke-width="1.2" />
+      <text class="pill-text" x="14" y="21">⚡ Off-Venue Settle</text>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Border -->
+  <rect x="0" y="394" width="1200" height="6" rx="3" fill="url(#accentGrad)" />
+</svg>

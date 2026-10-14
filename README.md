@@ -354,3 +354,5 @@ Thank you for exploring this curated repository! If this guide helped you or you
 - **Informational Purposes Only**: This repository is a community-maintained research resource and does not constitute investment, financial, legal, or cryptographic advice.
 - **Regulatory Compliance**: Third-party custody providers must be evaluated based on your institution's governing jurisdiction (e.g., SEC, OCC, MiCA, FCA, FINMA, MAS, VARA). Digital asset custody entails counterparty, technological, and regulatory risks.
 - **Independent Security Audits**: Open-source key management code, smart contracts, and MPC libraries must undergo independent professional audits, threat modeling, and formal verification before managing production assets.
+# Awesome-Third-Party-Custodian-In-Crypto
+

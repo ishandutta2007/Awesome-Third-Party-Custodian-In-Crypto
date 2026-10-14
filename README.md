@@ -26,6 +26,7 @@
 - [🔓 Open-Source GitHub Projects & Libraries](#-open-source-github-projects--libraries)
 - [🧭 Custody Architecture Comparison (MPC vs Multi-Sig vs HSM)](#-custody-architecture-comparison)
 - [⚖️ Regulatory Matrix & Compliance Standards](#-regulatory-matrix--compliance-standards)
+- [❓ Frequently Asked Questions (FAQ) & SEO Glossary](#-frequently-asked-questions-faq--seo-glossary)
 - [🤝 How to Contribute](#-how-to-contribute)
 - [💖 Support](#-support)
 - [Star History](#star-history)
@@ -154,151 +155,181 @@ Repositories are **sorted strictly in descending order by GitHub stargazer count
 - **Category**: Threshold Cryptography (MPC-TSS)
 - **Description**: Production-grade Rust implementation of `{t,n}`-Threshold ECDSA digital signature algorithms. Designed to eliminate single points of key compromise in Bitcoin and Ethereum wallet architectures without relying on on-chain multi-sig gas overhead.
 
-### 6. [BNB Chain TSS-Lib](https://github.com/bnb-chain/tss-lib) [![GitHub stars](https://img.shields.io/github/stars/bnb-chain/tss-lib?style=social&color=white)](https://github.com/bnb-chain/tss-lib/stargazers)
+### 6. [BDK (Bitcoin Dev Kit)](https://github.com/bitcoindevkit/bdk) [![GitHub stars](https://img.shields.io/github/stars/bitcoindevkit/bdk?style=social&color=white)](https://github.com/bitcoindevkit/bdk/stargazers)
+- **Repo**: `bitcoindevkit/bdk`
+- **Primary Stack**: Rust
+- **Category**: Descriptor-Based Wallet & Custody Infrastructure
+- **Description**: Modern, lightweight, descriptor-based wallet library written in Rust. Empowers institutional custody developers to construct air-gapped multisig coordinators, automated sweep scripts, and cross-platform wallet backends using Bitcoin Output Descriptors and Miniscript.
+
+### 7. [BNB Chain TSS-Lib](https://github.com/bnb-chain/tss-lib) [![GitHub stars](https://img.shields.io/github/stars/bnb-chain/tss-lib?style=social&color=white)](https://github.com/bnb-chain/tss-lib/stargazers)
 - **Repo**: `bnb-chain/tss-lib`
 - **Primary Stack**: Go
 - **Category**: Threshold Signature Scheme (TSS) Library
 - **Description**: Widely adopted Go implementation of Threshold Signature Schemes for ECDSA (secp256k1) and EdDSA (ed25519). Enables distributed key generation (DKG) and threshold signing across distrusting institutional parties.
 
-### 7. [Coinbase Kryptology](https://github.com/coinbase/kryptology) [![GitHub stars](https://img.shields.io/github/stars/coinbase/kryptology?style=social&color=white)](https://github.com/coinbase/kryptology/stargazers)
+### 8. [Coinbase Kryptology](https://github.com/coinbase/kryptology) [![GitHub stars](https://img.shields.io/github/stars/coinbase/kryptology?style=social&color=white)](https://github.com/coinbase/kryptology/stargazers)
 - **Repo**: `coinbase/kryptology`
 - **Primary Stack**: Go
 - **Category**: Cryptographic Primitives & Threshold Protocols
 - **Description**: Coinbase's foundational open-source cryptographic repository powering Coinbase Custody. Contains implementations of threshold ECDSA, DKG, Schnorr signatures, Shamir secret sharing, and zero-knowledge proof primitives.
 
-### 8. [Specter Desktop](https://github.com/cryptoadvance/specter-desktop) [![GitHub stars](https://img.shields.io/github/stars/cryptoadvance/specter-desktop?style=social&color=white)](https://github.com/cryptoadvance/specter-desktop/stargazers)
+### 9. [Specter Desktop](https://github.com/cryptoadvance/specter-desktop) [![GitHub stars](https://img.shields.io/github/stars/cryptoadvance/specter-desktop?style=social&color=white)](https://github.com/cryptoadvance/specter-desktop/stargazers)
 - **Repo**: `cryptoadvance/specter-desktop`
 - **Primary Stack**: Python, Flask, JavaScript
 - **Category**: Air-Gapped Multisig Coordinator & Hardware Vault Interface
 - **Description**: Desktop multisig coordinator designed for institutional and sovereign Bitcoin custody setups. Seamlessly coordinates air-gapped signing across hardware security keys (Ledger, Trezor, Coldcard, BitBox02) and connects directly to private Bitcoin Core nodes.
 
-### 9. [Ledger Live](https://github.com/LedgerHQ/ledger-live) [![GitHub stars](https://img.shields.io/github/stars/LedgerHQ/ledger-live?style=social&color=white)](https://github.com/LedgerHQ/ledger-live/stargazers)
+### 10. [Coldcard Firmware](https://github.com/Coldcard/firmware) [![GitHub stars](https://img.shields.io/github/stars/Coldcard/firmware?style=social&color=white)](https://github.com/Coldcard/firmware/stargazers)
+- **Repo**: `Coldcard/firmware`
+- **Primary Stack**: Python, C
+- **Category**: Air-Gapped HSM Vault Firmware & PSBT Signer
+- **Description**: Core open-source firmware and simulator for the Coldcard hardware security device. Enforces strict air-gapped PSBT (BIP-174) signing ceremonies via MicroSD/NFC, dual secure elements, and anti-klepto signature protection for ultra-secure collaborative custody setups.
+
+### 11. [Ledger Live](https://github.com/LedgerHQ/ledger-live) [![GitHub stars](https://img.shields.io/github/stars/LedgerHQ/ledger-live?style=social&color=white)](https://github.com/LedgerHQ/ledger-live/stargazers)
 - **Repo**: `LedgerHQ/ledger-live`
 - **Primary Stack**: TypeScript, JavaScript
 - **Category**: Hardware-Enforced Custodial Interfaces & BOLOS SDK
 - **Description**: Monorepo for Ledger's desktop and mobile custody suite, managing hardware security modules (HSMs) and secure enclaves (ST33 Secure Element) for private key isolation.
 
-### 10. [Bitcoin Core HWI](https://github.com/bitcoin-core/HWI) [![GitHub stars](https://img.shields.io/github/stars/bitcoin-core/HWI?style=social&color=white)](https://github.com/bitcoin-core/HWI/stargazers)
+### 12. [Bitcoin Core HWI](https://github.com/bitcoin-core/HWI) [![GitHub stars](https://img.shields.io/github/stars/bitcoin-core/HWI?style=social&color=white)](https://github.com/bitcoin-core/HWI/stargazers)
 - **Repo**: `bitcoin-core/HWI`
 - **Primary Stack**: Python
 - **Category**: Hardware Wallet Interface for Multisig Custody & Signing
 - **Description**: Standardized Python library and CLI tool providing a unified interface to hardware security devices (Coldcard, Trezor, Ledger, BitBox, Jade). Fundamental component for institutional cold-storage air-gapped multisig coordinator stacks.
 
-### 11. [Argent Contracts](https://github.com/argentlabs/argent-contracts) [![GitHub stars](https://img.shields.io/github/stars/argentlabs/argent-contracts?style=social&color=white)](https://github.com/argentlabs/argent-contracts/stargazers)
+### 13. [Argent Contracts](https://github.com/argentlabs/argent-contracts) [![GitHub stars](https://img.shields.io/github/stars/argentlabs/argent-contracts?style=social&color=white)](https://github.com/argentlabs/argent-contracts/stargazers)
 - **Repo**: `argentlabs/argent-contracts`
 - **Primary Stack**: Solidity
 - **Category**: Smart Contract Guardian Custody
 - **Description**: Smart contract architecture pioneering guardian-based social recovery, session keys, and daily transfer limit policies. Replaces static seed phrases with institutional-grade on-chain governance.
 
-### 12. [Web3Auth Core](https://github.com/Web3Auth/web3auth-web) [![GitHub stars](https://img.shields.io/github/stars/Web3Auth/web3auth-web?style=social&color=white)](https://github.com/Web3Auth/web3auth-web/stargazers)
+### 14. [Specter-DIY](https://github.com/cryptoadvance/specter-diy) [![GitHub stars](https://img.shields.io/github/stars/cryptoadvance/specter-diy?style=social&color=white)](https://github.com/cryptoadvance/specter-diy/stargazers)
+- **Repo**: `cryptoadvance/specter-diy`
+- **Primary Stack**: Python, C
+- **Category**: Air-Gapped Hardware Signer Core
+- **Description**: Open-source, air-gapped hardware signer built on embedded hardware (STM32). Uses visual QR-code data transfers and camera verification to sign transactions offline, completely eliminating USB attack surfaces in collaborative multisig quorums.
+
+### 15. [Blockstream Jade](https://github.com/Blockstream/jade) [![GitHub stars](https://img.shields.io/github/stars/Blockstream/jade?style=social&color=white)](https://github.com/Blockstream/jade/stargazers)
+- **Repo**: `Blockstream/jade`
+- **Primary Stack**: C, Python
+- **Category**: Air-Gapped Hardware Wallet & Multisig Signer
+- **Description**: Open-source firmware for Blockstream Jade hardware security device. Supports purely air-gapped QR signing ceremonies, blind oracle virtual secure elements, and multi-signature setups with Liquid assets and Bitcoin custody.
+
+### 16. [Web3Auth Core](https://github.com/Web3Auth/web3auth-web) [![GitHub stars](https://img.shields.io/github/stars/Web3Auth/web3auth-web?style=social&color=white)](https://github.com/Web3Auth/web3auth-web/stargazers)
 - **Repo**: `Web3Auth/web3auth-web`
 - **Primary Stack**: TypeScript, JavaScript
 - **Category**: Distributed Threshold Key Management & MPC Auth Infrastructure
 - **Description**: Non-custodial MPC threshold key management infrastructure. Splits private keys into multiple independent factors (device, OAuth/social login, backup recovery) using Shamir Secret Sharing and TSS nodes.
 
-### 13. [BitGoJS](https://github.com/BitGo/BitGoJS) [![GitHub stars](https://img.shields.io/github/stars/BitGo/BitGoJS?style=social&color=white)](https://github.com/BitGo/BitGoJS/stargazers)
+### 17. [Rust Miniscript](https://github.com/rust-bitcoin/rust-miniscript) [![GitHub stars](https://img.shields.io/github/stars/rust-bitcoin/rust-miniscript?style=social&color=white)](https://github.com/rust-bitcoin/rust-miniscript/stargazers)
+- **Repo**: `rust-bitcoin/rust-miniscript`
+- **Primary Stack**: Rust
+- **Category**: Structured Custody Scripting & Policy Compiler
+- **Description**: Production Rust compiler and analyzer for Miniscript and Bitcoin Output Descriptors. Enables institutional custody engineers to design complex spending rules, multi-tier timelocked fallback policies, and verifiable multisig threshold schemes.
+
+### 18. [BitGoJS](https://github.com/BitGo/BitGoJS) [![GitHub stars](https://img.shields.io/github/stars/BitGo/BitGoJS?style=social&color=white)](https://github.com/BitGo/BitGoJS/stargazers)
 - **Repo**: `BitGo/BitGoJS`
 - **Primary Stack**: TypeScript, JavaScript
 - **Category**: Enterprise Multi-Sig & MPC SDK
 - **Description**: Official open-source client SDK for BitGo’s multi-signature and TSS custodial services. Allows developers to script automated cold-to-warm sweeps, sign multi-party transactions, and interact with 600+ digital assets.
 
-### 14. [Taurus multi-party-sig](https://github.com/taurushq-io/multi-party-sig) [![GitHub stars](https://img.shields.io/github/stars/taurushq-io/multi-party-sig?style=social&color=white)](https://github.com/taurushq-io/multi-party-sig/stargazers)
+### 19. [Taurus multi-party-sig](https://github.com/taurushq-io/multi-party-sig) [![GitHub stars](https://img.shields.io/github/stars/taurushq-io/multi-party-sig?style=social&color=white)](https://github.com/taurushq-io/multi-party-sig/stargazers)
 - **Repo**: `taurushq-io/multi-party-sig`
 - **Primary Stack**: Go
 - **Category**: Threshold Cryptography (MPC-CMP)
 - **Description**: Created by Taurus SA (Switzerland's premier institutional digital asset infrastructure firm). Provides clean, modular Go implementations of state-of-the-art threshold signature protocols for banking-grade key custody.
 
-### 15. [Zcash Foundation FROST](https://github.com/ZcashFoundation/frost) [![GitHub stars](https://img.shields.io/github/stars/ZcashFoundation/frost?style=social&color=white)](https://github.com/ZcashFoundation/frost/stargazers)
+### 20. [Zcash Foundation FROST](https://github.com/ZcashFoundation/frost) [![GitHub stars](https://img.shields.io/github/stars/ZcashFoundation/frost?style=social&color=white)](https://github.com/ZcashFoundation/frost/stargazers)
 - **Repo**: `ZcashFoundation/frost`
 - **Primary Stack**: Rust
 - **Category**: Flexible Round-Optimized Schnorr Threshold (FROST)
 - **Description**: High-assurance Rust implementation of the FROST threshold signature scheme. Facilitates distributed Schnorr signatures with minimal network round latency, ideal for next-generation threshold custody across Taproot and Ed25519.
 
-### 16. [Coinbase WaaS SDK](https://github.com/coinbase/waas-sdk-react-native) [![GitHub stars](https://img.shields.io/github/stars/coinbase/waas-sdk-react-native?style=social&color=white)](https://github.com/coinbase/waas-sdk-react-native/stargazers)
+### 21. [Coinbase WaaS SDK](https://github.com/coinbase/waas-sdk-react-native) [![GitHub stars](https://img.shields.io/github/stars/coinbase/waas-sdk-react-native?style=social&color=white)](https://github.com/coinbase/waas-sdk-react-native/stargazers)
 - **Repo**: `coinbase/waas-sdk-react-native`
 - **Primary Stack**: TypeScript, Swift, Kotlin
 - **Category**: Wallet-as-a-Service MPC Operations SDK
 - **Description**: Official client SDK enabling MPC operations for iOS and Android devices via Coinbase Wallet as a Service (WaaS). Facilitates distributed key generation and client-side threshold signing.
 
-### 17. [MetaMask Torus Node](https://github.com/MetaMask/torus-node) [![GitHub stars](https://img.shields.io/github/stars/MetaMask/torus-node?style=social&color=white)](https://github.com/MetaMask/torus-node/stargazers)
+### 22. [MetaMask Torus Node](https://github.com/MetaMask/torus-node) [![GitHub stars](https://img.shields.io/github/stars/MetaMask/torus-node?style=social&color=white)](https://github.com/MetaMask/torus-node/stargazers)
 - **Repo**: `MetaMask/torus-node`
 - **Primary Stack**: Go
 - **Category**: Distributed Key Generation (DKG) Network
 - **Description**: Distributed threshold key generation and management nodes. Orchestrates key share assignment and recovery without any single party having access to the master private key.
 
-### 18. [Unchained Capital Caravan](https://github.com/unchained-capital/caravan) [![GitHub stars](https://img.shields.io/github/stars/unchained-capital/caravan?style=social&color=white)](https://github.com/unchained-capital/caravan/stargazers)
+### 23. [Unchained Capital Caravan](https://github.com/unchained-capital/caravan) [![GitHub stars](https://img.shields.io/github/stars/unchained-capital/caravan?style=social&color=white)](https://github.com/unchained-capital/caravan/stargazers)
 - **Repo**: `unchained-capital/caravan`
 - **Primary Stack**: JavaScript, HTML
 - **Category**: Collaborative Multisig Coordinator & Key Recovery
 - **Description**: Open-source, stateless collaborative custody tool created by Unchained Capital. Allows institutions and family offices to build transparent M-of-N Bitcoin multisig vaults using multiple hardware wallets with guaranteed offline key recovery.
 
-### 19. [ING Bank Threshold Signatures](https://github.com/ing-bank/threshold-signatures) [![GitHub stars](https://img.shields.io/github/stars/ing-bank/threshold-signatures?style=social&color=white)](https://github.com/ing-bank/threshold-signatures/stargazers)
+### 24. [ING Bank Threshold Signatures](https://github.com/ing-bank/threshold-signatures) [![GitHub stars](https://img.shields.io/github/stars/ing-bank/threshold-signatures?style=social&color=white)](https://github.com/ing-bank/threshold-signatures/stargazers)
 - **Repo**: `ing-bank/threshold-signatures`
 - **Primary Stack**: Rust
 - **Category**: Banking-Grade Threshold ECDSA Library
 - **Description**: Production-oriented threshold ECDSA cryptographic library built by Dutch multinational bank ING. Provides distributed signature generation without assembling private keys, tailored for institutional bank custody integrations.
 
-### 20. [fystack mpcium](https://github.com/fystack/mpcium) [![GitHub stars](https://img.shields.io/github/stars/fystack/mpcium?style=social&color=white)](https://github.com/fystack/mpcium/stargazers)
+### 25. [fystack mpcium](https://github.com/fystack/mpcium) [![GitHub stars](https://img.shields.io/github/stars/fystack/mpcium?style=social&color=white)](https://github.com/fystack/mpcium/stargazers)
 - **Repo**: `fystack/mpcium`
 - **Primary Stack**: Go
 - **Category**: Distributed MPC Wallet Framework
 - **Description**: Lightweight open-source toolkit enabling developers to stand up distributed MPC custodial wallet clusters in minutes. Eliminates proprietary vendor lock-in for startups building custom key management.
 
-### 21. [Threshold Network keep-core](https://github.com/threshold-network/keep-core) [![GitHub stars](https://img.shields.io/github/stars/threshold-network/keep-core?style=social&color=white)](https://github.com/threshold-network/keep-core/stargazers)
+### 26. [Threshold Network keep-core](https://github.com/threshold-network/keep-core) [![GitHub stars](https://img.shields.io/github/stars/threshold-network/keep-core?style=social&color=white)](https://github.com/threshold-network/keep-core/stargazers)
 - **Repo**: `threshold-network/keep-core`
 - **Primary Stack**: Go
 - **Category**: Decentralized Custody Network & tBTC Signer Nodes
 - **Description**: Core client and node infrastructure for Threshold Network's trust-minimized, decentralized Bitcoin custody. Facilitates threshold ECDSA signer groups and deposit/minting verification for wrapped Bitcoin (tBTC).
 
-### 22. [Safeheron multi-party-sig-cpp](https://github.com/Safeheron/multi-party-sig-cpp) [![GitHub stars](https://img.shields.io/github/stars/Safeheron/multi-party-sig-cpp?style=social&color=white)](https://github.com/Safeheron/multi-party-sig-cpp/stargazers)
+### 27. [Safeheron multi-party-sig-cpp](https://github.com/Safeheron/multi-party-sig-cpp) [![GitHub stars](https://img.shields.io/github/stars/Safeheron/multi-party-sig-cpp?style=social&color=white)](https://github.com/Safeheron/multi-party-sig-cpp/stargazers)
 - **Repo**: `Safeheron/multi-party-sig-cpp`
 - **Primary Stack**: C++
 - **Category**: High-Performance Threshold Signatures
 - **Description**: Production C++ implementation of `{t,n}`-Threshold Signature Schemes optimized for low-latency hardware security modules and Intel SGX enclaves.
 
-### 23. [Turnkey SDK](https://github.com/tkhq/sdk) [![GitHub stars](https://img.shields.io/github/stars/tkhq/sdk?style=social&color=white)](https://github.com/tkhq/sdk/stargazers)
+### 28. [Turnkey SDK](https://github.com/tkhq/sdk) [![GitHub stars](https://img.shields.io/github/stars/tkhq/sdk?style=social&color=white)](https://github.com/tkhq/sdk/stargazers)
 - **Repo**: `tkhq/sdk`
 - **Primary Stack**: TypeScript
 - **Category**: Secure Enclave Custody & Policy SDK (Turnkey)
 - **Description**: Official TypeScript SDK for Turnkey's cloud enclave infrastructure. Enables programmatic generation of crypto wallets inside AWS Nitro Enclaves with cryptographic quorum policies and WebAuthn/passkey signers.
 
-### 24. [Fireblocks JS SDK](https://github.com/fireblocks/fireblocks-sdk-js) [![GitHub stars](https://img.shields.io/github/stars/fireblocks/fireblocks-sdk-js?style=social&color=white)](https://github.com/fireblocks/fireblocks-sdk-js/stargazers)
+### 29. [Fireblocks JS SDK](https://github.com/fireblocks/fireblocks-sdk-js) [![GitHub stars](https://img.shields.io/github/stars/fireblocks/fireblocks-sdk-js?style=social&color=white)](https://github.com/fireblocks/fireblocks-sdk-js/stargazers)
 - **Repo**: `fireblocks/fireblocks-sdk-js`
 - **Primary Stack**: TypeScript, JavaScript
 - **Category**: Institutional Custody Automation SDK
 - **Description**: Official client SDK for Fireblocks institutional custody platform. Enables automated hot wallet management, internal vault sweeps, gas station orchestration, and rule-based MPC transaction authorization.
 
-### 25. [339 Labs Wallet Platform MPC](https://github.com/339-Labs/wallet-platform-mpc-go) [![GitHub stars](https://img.shields.io/github/stars/339-Labs/wallet-platform-mpc-go?style=social&color=white)](https://github.com/339-Labs/wallet-platform-mpc-go/stargazers)
+### 30. [339 Labs Wallet Platform MPC](https://github.com/339-Labs/wallet-platform-mpc-go) [![GitHub stars](https://img.shields.io/github/stars/339-Labs/wallet-platform-mpc-go?style=social&color=white)](https://github.com/339-Labs/wallet-platform-mpc-go/stargazers)
 - **Repo**: `339-Labs/wallet-platform-mpc-go`
 - **Primary Stack**: Go
 - **Category**: Institutional MPC Custody & Withdrawal Security Engine
 - **Description**: MPC wallet system tailored for institutional crypto custody, centralized exchange withdrawal security, and multi-chain key authorization.
 
-### 26. [CubeSigner SDK](https://github.com/cubist-labs/CubeSigner-TypeScript-SDK) [![GitHub stars](https://img.shields.io/github/stars/cubist-labs/CubeSigner-TypeScript-SDK?style=social&color=white)](https://github.com/cubist-labs/CubeSigner-TypeScript-SDK/stargazers)
+### 31. [CubeSigner SDK](https://github.com/cubist-labs/CubeSigner-TypeScript-SDK) [![GitHub stars](https://img.shields.io/github/stars/cubist-labs/CubeSigner-TypeScript-SDK?style=social&color=white)](https://github.com/cubist-labs/CubeSigner-TypeScript-SDK/stargazers)
 - **Repo**: `cubist-labs/CubeSigner-TypeScript-SDK`
 - **Primary Stack**: TypeScript
 - **Category**: Hardware-Backed Non-Exportable Key Manager (CubeSigner)
 - **Description**: Client SDK for CubeSigner, a hardware-backed non-exportable key management platform. Enforces cryptographic transaction policies and multi-factor approval workflows inside secure hardware enclaves before signing.
 
-### 27. [Fystack Custody Stack](https://github.com/fystack/fystack-selfhost-scripts) [![GitHub stars](https://img.shields.io/github/stars/fystack/fystack-selfhost-scripts?style=social&color=white)](https://github.com/fystack/fystack-selfhost-scripts/stargazers)
+### 32. [Fystack Custody Stack](https://github.com/fystack/fystack-selfhost-scripts) [![GitHub stars](https://img.shields.io/github/stars/fystack/fystack-selfhost-scripts?style=social&color=white)](https://github.com/fystack/fystack-selfhost-scripts/stargazers)
 - **Repo**: `fystack/fystack-selfhost-scripts`
 - **Primary Stack**: Shell, Docker, Go
 - **Category**: Self-Hosted Custody Stack & Sweep Engine
 - **Description**: Turnkey deployment scripts for self-hosting an institutional-grade crypto custody stack. Features MPC threshold signing nodes, multi-chain deposit detection across 10+ chains, automated cold sweeps, and RBAC governance.
 
-### 28. [Fireblocks Disaster Recovery Tool](https://github.com/fireblocks/recovery) [![GitHub stars](https://img.shields.io/github/stars/fireblocks/recovery?style=social&color=white)](https://github.com/fireblocks/recovery/stargazers)
+### 33. [Fireblocks Disaster Recovery Tool](https://github.com/fireblocks/recovery) [![GitHub stars](https://img.shields.io/github/stars/fireblocks/recovery?style=social&color=white)](https://github.com/fireblocks/recovery/stargazers)
 - **Repo**: `fireblocks/recovery`
 - **Primary Stack**: TypeScript, Shell
 - **Category**: Custody Continuity & Disaster Recovery
 - **Description**: Standalone open-source recovery suite that allows Fireblocks clients to independently recover their private keys and digital assets in an extreme disaster scenario without connecting to Fireblocks cloud infrastructure.
 
-### 29. [Dfns TypeScript SDK](https://github.com/dfns/dfns-sdk-ts) [![GitHub stars](https://img.shields.io/github/stars/dfns/dfns-sdk-ts?style=social&color=white)](https://github.com/dfns/dfns-sdk-ts/stargazers)
+### 34. [Dfns TypeScript SDK](https://github.com/dfns/dfns-sdk-ts) [![GitHub stars](https://img.shields.io/github/stars/dfns/dfns-sdk-ts?style=social&color=white)](https://github.com/dfns/dfns-sdk-ts/stargazers)
 - **Repo**: `dfns/dfns-sdk-ts`
 - **Primary Stack**: TypeScript
 - **Category**: Stateless MPC Custody Client
 - **Description**: Developer SDK to interact with Dfns' FIDO2/WebAuthn authenticated MPC wallet infrastructure. Enables developers to programmatically generate wallets and execute threshold policy signoffs.
 
-### 30. [kms-secp256k1-api](https://github.com/Interchouette/kms-secp256k1-api) [![GitHub stars](https://img.shields.io/github/stars/Interchouette/kms-secp256k1-api?style=social&color=white)](https://github.com/Interchouette/kms-secp256k1-api/stargazers)
+### 35. [kms-secp256k1-api](https://github.com/Interchouette/kms-secp256k1-api) [![GitHub stars](https://img.shields.io/github/stars/Interchouette/kms-secp256k1-api?style=social&color=white)](https://github.com/Interchouette/kms-secp256k1-api/stargazers)
 - **Repo**: `Interchouette/kms-secp256k1-api`
 - **Primary Stack**: Rust, AWS KMS
 - **Category**: Cloud KMS Custodial Wallet
@@ -357,6 +388,30 @@ Institutions selecting a third-party crypto custodian must evaluate compliance f
   - **FCA CASS (Client Assets Sourcebook)**: Rigorous asset segregation rules ensuring client crypto assets are insulated from custodian insolvency.
 - **🇦🇪 United Arab Emirates**:
   - **VARA (Virtual Assets Regulatory Authority)**: Dubai's specialized licensing regime mandating stringent custody and cold-storage audits.
+
+---
+
+## ❓ Frequently Asked Questions (FAQ) & SEO Glossary
+
+### 1. What is a "Qualified Custodian" in institutional crypto?
+Under **SEC Rule 206(4)-2** (the Custody Rule) and international banking standards (e.g., BaFin, FINMA, MAS, VARA), a **Qualified Custodian** is a regulated bank, trust company, or registered broker-dealer authorized to safeguard client funds segregated from the custodian's balance sheet. In crypto, qualified custodians (e.g., Coinbase Custody Trust Co., Anchorage Digital Bank, BitGo Trust) guarantee bankruptcy-remote holding, SOC 1 & SOC 2 Type II controls, and institutional specie insurance.
+
+### 2. How does Multi-Party Computation (MPC-TSS) differ from On-Chain Multi-Signature?
+- **MPC (Multi-Party Computation)** utilizes Threshold Signature Schemes (TSS, e.g., MPC-CMP, FROST) where private key *shards* or *shares* are mathematically distributed across parties. The full private key is never assembled in memory or stored on any single device. Transactions appear on-chain as standard, single-signature transactions, preserving privacy and minimizing gas fees across any blockchain curve (secp256k1, ed25519).
+- **Multi-Sig (Multi-Signature)** relies on native blockchain smart contracts (e.g., Safe ERC-4337, Bitcoin P2SH/P2WSH multisig) where individual full private keys sign independently on-chain. While transparent and verifiable, multi-sig consumes higher gas and is chain-dependent.
+
+### 3. What is Off-Exchange Settlement (OES)?
+Off-Exchange Settlement networks (such as **Copper ClearLoop** and **Fireblocks Network**) allow institutional allocators, market makers, and hedge funds to trade on centralized cryptocurrency exchanges (e.g., OKX, Bybit, Deribit, Kraken) while maintaining their assets safely in independent, bankruptcy-remote third-party custody. Capital is committed and settled via cryptographic escrows and collateral lockups, eliminating exchange counterparty risks.
+
+### 4. What are Hardware Security Modules (HSMs) and Secure Enclaves?
+Institutional custodians utilize **FIPS 140-2 Level 3 and Level 4 HSMs** (such as Securosys Primus, Thales Luna, and Ledger BOLOS) alongside cloud secure hardware enclaves (AWS Nitro Enclaves, Intel SGX) to generate and isolate cryptographic keys. These tamper-resistant processors physically erase key material if physical breach, voltage variance, or unauthorized tampering is detected.
+
+### 5. What are the key regulatory frameworks governing crypto custody?
+- **🇺🇸 US**: OCC Bank Charters, NYDFS BitLicense, SEC Rule 206(4)-2.
+- **🇪🇺 EU**: MiCA (Markets in Crypto-Assets) and DORA (Digital Operational Resilience Act).
+- **🇬🇧 UK**: FCA CASS (Client Assets Sourcebook) registration.
+- **🇦🇪 UAE**: VARA Custody & Staking rulebooks.
+- **🇸🇬 Singapore**: MAS Major Payment Institution (MPI) digital payment token licenses.
 
 ---
 

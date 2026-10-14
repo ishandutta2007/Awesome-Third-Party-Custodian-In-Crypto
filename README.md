@@ -356,7 +356,7 @@ Thank you for exploring this curated repository! If this guide helped you or you
 - **Independent Security Audits**: Open-source key management code, smart contracts, and MPC libraries must undergo independent professional audits, threat modeling, and formal verification before managing production assets.
 # Awesome-Third-Party-Custodian-In-Crypto
 
-## Top Third-Party Custodian in Crypto Tools Ecosystem
+### Top Third-Party Custodian in Crypto Tools Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Institutional Digital Asset Safekeeping, Key Management & Collateral Settlement*  
@@ -451,7 +451,7 @@ Star the repo if you find it useful!
 Let's make third-party crypto custody more open, auditable, and institutionally accessible.
 # Awesome-Third-Party-Custodian-In-Crypto
 
-# Top Third-Party Custodian in Crypto Tools Ecosystem
+## Top Third-Party Custodian in Crypto Tools Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Institutional Digital Asset Safekeeping, Key Management & Collateral Settlement*  

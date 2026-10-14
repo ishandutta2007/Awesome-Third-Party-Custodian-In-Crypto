@@ -140,8 +140,8 @@
     <circle class="node-2" cx="1000" cy="80" r="4" filter="url(#glow)" />
   </g>
 
-  <!-- Animated Scanner Laser Line Across Center (clipped) -->
-  <g clip-path="url(#borderClip)">
+  <!-- Animated Scanner Laser Line Across Center -->
+  <g opacity="0.8">
     <line class="beam-line" x1="0" y1="365" x2="300" y2="365" stroke="url(#accentGrad)" stroke-width="3.5" filter="url(#glow)" />
   </g>
 
